@@ -33,7 +33,7 @@ entry.pack()
 button = tkinter.Button(tk, text="Guess", command=lambda: check(int(entry.get()))) #how to pass arguments to command for buttons in tkinter
 button.pack()
 
-tk.mainloop() #pauses all execution and following code will be executed after we exit that window
+tk.mainloop() #opens new window and pauses all execution and following code will be executed after we exit that window
 print("Done") #prints in terminal
 
 #LISTBOX:
