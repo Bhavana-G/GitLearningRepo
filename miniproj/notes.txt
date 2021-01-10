@@ -56,6 +56,7 @@ git merge <branch_name> - merge a current branch to the mentioned branch_name
 git remote add <origin_name> <Git repository link> - add remote repo to ur project 
 	so that we can store that project online on a remote server
 git remote -v - to check how many remote repositories we have
+	git remote show origin - can also be used - similar purpose
 git push - to push to remote repository
 	git push -u <origin_name> <current_branch_name> - alternatively we can use this
 	git branch --set-upstream-to <origin/remote-branch> - sets the default remote branch 
@@ -70,7 +71,13 @@ git pull - to pull from remote repository
 	remote to local - pull
 .gitignore - list of files we want Git to ignore
 rm -rf .git - delete local Git repository
-ls -lah - Then from the same ex-repository folder, to see if hidden folder .git is still there
+ls -lah (or) ls -la - Then from the same ex-repository folder, to see if hidden folder .git is still there
+git remote set-url --add --push origin git@github.com:muccg/my-project.git - to set multiple remote repositories for push
+	You can't pull from multiple remotes at once
+git remote rm <origin_name> - remove a remote repository. It does not delete the remote repository 
+	from the server. It simply removes the remote and its references from your local repository.
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
 
 Git Workflow:
 
