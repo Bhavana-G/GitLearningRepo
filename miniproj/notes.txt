@@ -4,10 +4,11 @@ Steps:
 2. virtual environment:
 	pip3 install virtualenv
 	virtualenv env
-	Start-Process powershell -Verb runAs
+	In powershell:
+		Start-Process powershell -Verb runAs
+		Set-ExecutionPolicy RemoteSigned to be executed to run scripts
 	.\env\Scripts\activate.ps1
 	we get (env) in starting -> virtual environment successfully started
-	 Set-ExecutionPolicy RemoteSigned to be executed to run scripts
 3. pip3 install flask flask-sqlalchemy
 4. python -m flask run to run application(-m is short for module)
 5. to create db from python code:
